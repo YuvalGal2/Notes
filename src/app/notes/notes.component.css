@@ -1,0 +1,22 @@
+.text-centered{
+    text-align: center;
+}
+.title{
+    font-weight: 200;
+    font-size:2rem;
+    
+}
+.form-control{
+font-weight: 400;
+text-align: right;
+direction: rtl;
+border-right:none;
+border-left:none;
+}
+.number{
+    border:3px solid #1abc9c;
+    border-radius:10px;
+    text-align: center;
+    padding:10 0p x;
+    
+}
