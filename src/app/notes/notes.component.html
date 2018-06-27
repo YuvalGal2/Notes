@@ -1,33 +1,13 @@
 <div class="row">
-<div class="col-12">
-    <p class="text-centered title">
-       Notes
-    </p>
-    <hr>
-   
-   
-</div>
+    <div class="col-sm-12"> 
+        <app-add-note (createNoteEvent) = "addNote($event)"></app-add-note>
+    </div>
 </div>
 
-<div class="row" >
-<div class="col-12">
-        <app-note  (createNoteEvent) = "getNote($event)"></app-note>
-</div>
-</div>
 <hr>
-<div class="row">
-        <div class="col-sm-12" >
-            <div class="form-group"  *ngFor="let note of notes.reverse();  let i = index" >
-                <div class="form-control">  
-                    
-                        <div class="row">
-                            <div class="col-sm-10">{{note.text}}</div>
-                            
-                            <div class="col-sm-2 number">פתק מספר : {{i+1}} </div>
-                        </div>
-                   
-                </div>
 
-            
+<div class="row">
+        <div class="col-sm-12">
+             <app-note *ngFor = "let noteEle of notes" [note]="noteEle"></app-note>
         </div>
-        </div>
+    </div>

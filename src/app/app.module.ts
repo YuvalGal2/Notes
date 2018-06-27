@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { NotesComponent } from './notes/notes.component';
 import { NoteComponent } from './notes/note/note.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddNoteComponent } from './notes/add-note/add-note.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotesComponent,
-    NoteComponent
+    NoteComponent,
+    AddNoteComponent
   ],
   imports: [
     BrowserModule,

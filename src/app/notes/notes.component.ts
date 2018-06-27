@@ -8,13 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class NotesComponent implements OnInit {
 
   notes = [];
-
-  getNote(note: {noteText:string,id:number}){
-    this.notes.push({text: note.noteText,id: note.id});
-
-    console.log(this.notes);
+  addNote(note:{id:number,content:string,title:string}){
+   this.notes.push({id:note.id,content:note.content,title:note.title});
   }
-
 
   constructor() { }
 

@@ -1,0 +1,8 @@
+<div class="form-group">
+    <label for="title" >כותרת לפתק</label>
+  <input type="text" id="title" class="form-control"> 
+  <label for="note">תוכן הפתק</label>
+   <textarea type="text" id="note" [(ngModel)]="noteContent" style="direction: rtl !important;" class="form-control"></textarea>
+
+   <button class="btn btn-primary" (click)="send()">הוסף פתק</button>
+</div>

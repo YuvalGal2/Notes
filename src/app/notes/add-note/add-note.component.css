@@ -1,0 +1,33 @@
+label{
+  /*  float: right;*/
+    margin-top:20px;
+    font-weight: 400;
+    font-size:1.4rem;
+    text-align: center;
+    display: block;
+
+}
+.btn-primary{
+    margin:10px;
+}
+@media(min-width:768px){
+    .form-group{
+        padding:30px;
+        margin:30px;
+    }
+}
+.form-group{
+    border-right:1px  dotted royalblue;
+    border-left:1px  dotted royalblue;
+}
+.form-control{
+    font-weight: 400;
+    text-align: right;
+    direction: rtl;
+    border:1px solid royalblue;
+    border-right:none;
+    border-left:none;
+    }
+textarea{
+    margin-top:30px;
+}

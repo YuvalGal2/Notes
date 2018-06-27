@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-note',
@@ -6,16 +6,12 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./note.component.css']
 })
 export class NoteComponent implements OnInit {
-  note:string;
-  noteId:number = 0;
-  @Output() createNoteEvent = new EventEmitter<{noteText:string,id:number}>();
-  send(){
-    this.noteId++;
-    this.createNoteEvent.emit({noteText: this.note, id:this.noteId});
-  }
-  constructor() { }
+
+  @Input() note : {id:number,content:string,title:string};
+  
+  constructor() {}
 
   ngOnInit() {
   }
-
+  
 }
